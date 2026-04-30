@@ -11,5 +11,9 @@ namespace screenmagic {
         const x = Math.floor(index % 5);
         led.plot(x, y)
     }
-    game.gameOver()
+    
+    input.onButtonPressed(Button.A, function() {
+        
+        control.reset()
+    })
 }
